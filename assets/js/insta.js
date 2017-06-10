@@ -9,7 +9,7 @@ alert(link);
 			var hdpicurl = data.thumbnail_url.replace(/s[0-9\.]+/i, "");
             var ath = "Author: " + data.author_name;
             var cpt = "Caption:" + data.title;
-			
+			alert("t");
 			
 			var result = "<img src='" + hdpicurl + "'/> <br>"+ ath +"<br> <br>" + cpt + "<br>";
 			$(".result").append(result);		
