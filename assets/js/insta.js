@@ -1,6 +1,5 @@
 function getPic(link){	
-alert(link);
-	var url = "http://api.instagram.com/oembed?url="+link;
+	var url = "https://api.instagram.com/oembed?url="+link;
     $.ajax({
         url: url,
         dataType: "jsonp",
@@ -9,7 +8,7 @@ alert(link);
 			var hdpicurl = data.thumbnail_url.replace(/s[0-9\.]+/i, "");
             var ath = "Author: " + data.author_name;
             var cpt = "Caption:" + data.title;
-			alert("t");
+			
 			
 			var result = "<img src='" + hdpicurl + "'/> <br>"+ ath +"<br> <br>" + cpt + "<br>";
 			$(".result").append(result);		
