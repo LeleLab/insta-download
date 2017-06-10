@@ -1,5 +1,5 @@
 function getPic(link){	
-alert("t");
+alert(link);
 	var url = "http://api.instagram.com/oembed?url="+link;
     $.ajax({
         url: url,
